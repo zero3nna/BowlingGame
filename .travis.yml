@@ -1,0 +1,5 @@
+os: osx
+language: swift
+script:
+  - xctool -project BowlingGame.xcodeproj -scheme BowlingGame -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -project BowlingGame.xcodeproj -scheme BowlingGameTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
